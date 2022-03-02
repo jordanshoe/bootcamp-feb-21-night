@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Elements</title>
+</head>
+<body>
+    <!-- Table Elements
+            table = parent element
+            tr = table row (row)
+            th = table header (heading column)
+            td = table date (data column)
+
+            colspan = merge column cells
+            rowspan = merge row cells
+
+            grouping table contents
+                thead = group head content
+                tbody = group body content
+                tfoot = group footer content
+    -->
+    <h2>Sample Table using TH</h2>
+    <table border="1" width="300px">
+        <tr>
+            <th>Title 1</th>
+            <th>Title 2</th>
+            <th rowspan="3">Title 3</th>
+        </tr>
+        <tr>
+            <th>Title 4</th>
+            <th>Title 5</th>
+            <!-- <th>Title 6</th> -->
+        </tr>
+        <tr>
+            <th>Title 7</th>
+            <th>Title 8</th>
+            <!-- <th>Title 9</th> -->
+        </tr>
+
+    </table>
+
+    <h2>Sample Table using TD</h2>
+    <table border="1" width="300px">
+        <tr>
+            <td colspan="3">Data 1</td>
+            <!-- <td>Data 2</td>
+            <td>Data 3</td> -->
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+        <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+        </tr>
+    </table>
+
+    <h2>Sample Table using TH and TD</h2>
+    <table border="1" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>California</td>
+            <td>34</td>
+            <td>johnsmith@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Jane Snow</td>
+            <td>Nebraska</td>
+            <td>24</td>
+            <td>jane1234@gmail.com</td>
+        </tr>
+
+    </table>
+
+    <h2>Sample table using colspan</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Numbers</th>
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>453453465656</td>
+            <td>423423454356</td>
+        </tr>
+        <tr>
+            <td>Steve Jobs</td>
+            <td>956456455645</td>
+            <td>342314234554</td>
+        </tr>
+    </table>
+
+    <h2>Sample table using rowspan</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>Bill Gates</td>
+            <td>Steve Jobs</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Contact Numbers</th>
+            <td>3482304848234</td>
+            <td>8034058340058</td>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <td>2312312312322</td>
+            <td>3213434234233</td>
+        </tr>
+    </table>
+
+    <h2>Sample table using grouping table contents</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>title 1</th>
+                <th>title 2</th>
+                <th>title 3</th>
+            </tr>
+            <tr>
+                <th>Subtitle 1</th>
+                <th>subtitle 2</th>
+                <th>subtitle 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data 1</td>
+                <td>data 2</td>
+                <td>data 3</td>
+            </tr>
+            <tr>
+                <td>data 4</td>
+                <td>data 5</td>
+                <td>data 6</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total 1</th>
+                <th>total 2</th>
+                <th>total 3</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
